@@ -72,7 +72,7 @@
     </ol>
     <h2 id="team-members">Team Members</h2>
     <ul>
-        <li><strong>Mohammad Ullah Tawfek : </strong> <a href="https://github.com/member1">GitHub Profile</a></li>
+        <li><strong>Mohammad Ullah Tawfek : </strong> <a href="https://github.com/AstroTawfek">GitHub Profile</a></li>
         <li><strong>Sheikh Negar Sultana : </strong> <a href="https://github.com/sheikhnegarsultana">GitHub Profile</a></li>
         <li><strong>Kh Sadman Sakib : </strong> <a href="https://github.com/sakibsidha">GitHub Profile</a></li>
         <li><strong>Md Abir Ahmed : </strong> <a href="https://github.com/member4">GitHub Profile</a></li>
