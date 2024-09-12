@@ -72,11 +72,11 @@
     </ol>
     <h2 id="team-members">Team Members</h2>
     <ul>
-        <li><strong>Mohammad Ullah Tawfek:</strong> <a href="https://github.com/member1">GitHub Profile</a></li>
-        <li><strong>Sheikh Negar Sultana:</strong> <a href="https://github.com/member2">GitHub Profile</a></li>
-        <li><strong>Kh Sadman Sakib:</strong> <a href="https://github.com/member3">GitHub Profile</a></li>
-        <li><strong>Md Abir Ahmed:</strong> <a href="https://github.com/member4">GitHub Profile</a></li>
-        <li><strong>Mahtab Khan:</strong> <a href="https://github.com/member5">GitHub Profile</a></li>
+        <li><strong>Mohammad Ullah Tawfek : </strong> <a href="https://github.com/member1">GitHub Profile</a></li>
+        <li><strong>Sheikh Negar Sultana : </strong> <a href="https://github.com/sheikhnegarsultana">GitHub Profile</a></li>
+        <li><strong>Kh Sadman Sakib : </strong> <a href="https://github.com/sakibsidha">GitHub Profile</a></li>
+        <li><strong>Md Abir Ahmed : </strong> <a href="https://github.com/member4">GitHub Profile</a></li>
+        <li><strong>Mahtab Khan : </strong> <a href="https://github.com/member5">GitHub Profile</a></li>
     </ul>
     <h2 id="license">License</h2>
     <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more information.</p>
