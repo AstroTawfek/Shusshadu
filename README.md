@@ -79,8 +79,8 @@
         <li><strong>Mahtab Khan : </strong> <a href="https://github.com/MahtabKhanSamin">GitHub Profile</a></li>
     </ul>
     <h2 id="license">License</h2>
-    <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more information.</p>
+    <p>This project is licensed under Hidden Zeta. See the <a href="LICENSE">LICENSE</a> file for more information.</p>
     <h2 id="acknowledgements">Acknowledgements</h2>
-    <p>We would like to thank all the contributors and the open-source community for their valuable resources and support. Special thanks to <a href="https://openai.com">OpenAI</a> for providing the language model that assisted in creating this README file.</p>
+    <p>We would like to thank all the contributors and the open-source community for their valuable resources and support. Special thanks to <a href="https://openai.com">OpenAI</a> for providing the language model that assisted in instructions.</p>
 </body>
 </html>
