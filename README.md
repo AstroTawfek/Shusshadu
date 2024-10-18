@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Recipe Website</title>
+    <title>Shusshadu</title>
 </head>
 <body>
     <h1>Food Recipe Website</h1>
-    <p>Welcome to our Food Recipe Website project! This repository contains the code and resources for our collaborative project aimed at creating a comprehensive and user-friendly platform for sharing and discovering food recipes.</p>
+    <p>Welcome to our Food Recipe Website project named Shusshadu. This repository contains the code and resources for our collaborative project aimed at creating a comprehensive and user-friendly platform for sharing and discovering food recipes.</p>
   <h2>Table of Contents</h2>
     <ul>
         <li><a href="#introduction">Introduction</a></li>
@@ -23,7 +23,7 @@
     </ul>
 
    <h2 id="introduction">Introduction</h2>
-    <p>Our Food Recipe Website is designed to provide users with a vast collection of recipes from various cuisines. Users can search for recipes, view detailed instructions, and even submit their own recipes to share with the community.</p>
+    <p>Our Website is designed to provide users with a vast collection of recipes from various cuisines. Users can search for recipes, view detailed instructions, and even submit their own recipes to share with the community.</p>
     <h2 id="features">Features</h2>
     <ul>
         <li>Browse recipes by category or cuisine</li>
@@ -43,10 +43,10 @@
     <p>To get a local copy up and running, follow these steps:</p>
     <ol>
         <li><strong>Clone the repository:</strong>
-            <pre><code>git clone https://github.com/your-username/food-recipe-website.git</code></pre>
+            <pre><code>git clone https://github.com/AstroTawfek/Shusshadu.git</code></pre>
         </li>
         <li><strong>Navigate to the project directory:</strong>
-            <pre><code>cd food-recipe-website</code></pre>
+            <pre><code>cd Shusshadu</code></pre>
         </li>
         <li><strong>Install dependencies:</strong>
             <pre><code>npm install</code></pre>
