@@ -13,7 +13,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
         *{
-            font-family: "Inter", sans-serif;
+           font-family: "Inter", sans-serif;
         }
         .l {
             font-family: "Kaushan Script", cursive;
@@ -29,7 +29,7 @@
         <nav class="n ">
             <div class="hamburg flex justify-between items-center p-4 md:mx-[30px]">
                 <div class="logo text-center order-1 md:pl-4">
-                    <span class="l text-4xl md:pr-10 ">Susshadhu</span>
+                    <span class="l text-4xl md:pr-10 ">Shusshadu</span>
                 </div>
                 <div class="item hidden md:flex justify-center gap-8 items-center order-2">
                     <div class="items flex justify-center items-center">
@@ -99,7 +99,7 @@
     </header>
 
     <main>
-        <div class="initial m-10 my-0 md:mx-20">
+        <div class="initial m-10 my-0 pt-5 md:mx-20">
             <div class="save flex justify-between items-center">
                 <span class="text">
                     80% would made this again
@@ -121,8 +121,8 @@
                     </svg>
                 </div>
             </div>
-            <div class="title">
-                <span>
+            <div class="title py-5">
+                <span class="text-6xl font-semibold">
                     Strawberry Cream ChesseCake
                 </span>
             </div>
@@ -184,32 +184,34 @@
                     Spring since it's not too heavy and it feels so fresh.</span>
             </div>
         </div>
-        <div class="image my-5 mx-10 w-fill p-0 h-300 flex items-center rounded-lg">
-            <img class="w-auto mx-auto h-300 rounded-lg object-cover" src="image\strawberry.jpg" alt="">
+        <div class="image my-5 mx-10 md:mx-20 w-fill p-0 h-100 flex items-center rounded-lg">
+            <img class="w-[100%] h-600 hover:opacity-50 cursor-pointer rounded-lg object-contain" src="image\strawberry.jpg" alt="">
         </div>
 
         <div class="time mx-10 flex items-center md:mx-20">
-            <div class="pre flex flex-col ">
-                <span>PRER TIME</span>
+            <div class="pre flex flex-col  text-sm">
+                <span class="text-gray-400">PRER TIME</span>
                 <span>15 MIN</span>
             </div>
             <div class="w-0.5 h-10 mx-5 bg-gray-400 rounded-xl"></div>
-            <div class="pre  flex flex-col">
-                <span>PRER TIME</span>
+            <div class="pre  flex flex-col  text-sm">
+                <span class="text-gray-400">PRER TIME</span>
                 <span>15 MIN</span>
             </div>
             <div class="w-0.5 h-10 mx-5 bg-gray-400 rounded-xl"></div>
             <div class="w-0 h-10"></div>
-            <div class="serve  flex flex-col">
-                <span>SERVICES</span>
+            <div class="serve  flex flex-col  text-sm">
+                <span  class="text-gray-400">SERVICES</span>
                 <span>4 PEOPLE</span>
             </div>
         </div>
+
+        <!--Ingredients-->
         <div class="body md:flex justify-center">
             <div class="part1 mx-10 md:mx-20 w-[60%]">
                 <div class="Ingridient my-5">
-                    <p>Ingridients</p>
-                    <p>For the crust</p>
+                    <p class="text-3xl font-semibold py-2">Ingridients</p>
+                    <p class="for font-semibold py-1">For the crust</p>
                     <div class="flex items-center gap-3">
                         <div class="h-4 w-4 border-[1.5px] border-black rounded-[70px]"></div>
                         <div>400g graham crackers</div>
@@ -218,7 +220,7 @@
                         <div class="h-4 w-4 border-[1.5px] border-black rounded-[70px]"></div>
                         <div>150g unsolted butters , melted</div>
                     </div>
-                    <p class="my-3">For the cheescake</p>
+                    <p class="my-3 font-semibold">For the cheescake</p>
                     <div class="flex items-center gap-3">
                         <div class="h-4 w-4 border-[1.5px] border-black rounded-[70px]"></div>
                         <div>175g unsalted butter, melted</div>
@@ -334,8 +336,8 @@
             </div>
 
             <div class="part2 mx-10 md:mx-20">
-                <div class="nutration bg-gray-300 px-2 rounded-xl">
-                    <p>Nutrition Facts</p>
+                <div class="nutration bg-gray-300 px-3 py-3 rounded-xl">
+                    <p class="text-1xl font-semibold py-3">Nutrition Facts</p>
                     <div class="flex justify-between my-1 items-center">
                         <p>Calories</p>
                         <p>219.9g</p>
@@ -381,9 +383,9 @@
                         <p>7.9g</p>
                     </div>
                 </div>
-
+        <!--Fresh Recipe-->
                 <div class="recipes">
-                    <p>Fresh Recipe</p>
+                    <p class="text-2xl py-5 font-semibold">Fresh Recipe</p>
                     <div class="item flex items-center my-5">
                         <div>
                             <img class="w-40" src="image/burger.webp" alt="">
@@ -396,7 +398,7 @@
                                 <i class='bx bxs-star text-[#FF642F]'></i>
                                 <i class='bx bxs-star text-[#FF642F]'></i>
                             </div>
-                            <p>Beef Chees Burger</p>
+                            <p class="text-1xl font-semibold">Beef Chees Burger</p>
                         </div>
                     </div>
 
@@ -412,7 +414,7 @@
                                 <i class='bx bxs-star text-[#FF642F]'></i>
                                 <i class='bx bxs-star text-[#FF642F]'></i>
                             </div>
-                            <p>Chicken Fry</p>
+                            <p class="text-1xl font-semibold">Chicken Fry</p>
                         </div>
                     </div>
 
@@ -428,7 +430,7 @@
                                 <i class='bx bxs-star text-[#FF642F]'></i>
                                 <i class='bx bxs-star text-[#FF642F]'></i>
                             </div>
-                            <p>Golden Syrup Pudding</p>
+                            <p class="text-1xl font-semibold">Golden Syrup Pudding</p>
                         </div>
                     </div>
 
@@ -444,7 +446,7 @@
                                 <i class='bx bxs-star text-[#FF642F]'></i>
                                 <i class='bx bxs-star text-[#FF642F]'></i>
                             </div>
-                            <p>Beef Chees Burger</p>
+                            <p class="text-1xl font-semibold">Beef Chees Burger</p>
                         </div>
                     </div>
                 </div>
@@ -471,10 +473,10 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="footer my-5 bg-gray-400">
         <div class="md:flex justify-between items-center md:mx-20 mx-10">
             <div class="md:w-[400px]">
-            <p class="s text-4xl">Shusshadu</p>
+            <p class="s text-4xl py-2">Shusshadu</p>
             <p>On the other hand , we denounce with
                righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of
                the moment</p>
