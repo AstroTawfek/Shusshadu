@@ -31,6 +31,19 @@
           }
     </style>
 
+    <!-- Font CDN 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;1,600&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        #judson-bold {
+          font-family: "Judson", serif;
+          font-weight: 700;
+          font-style: normal;
+        }
+    </style>
+
     <!-- DaisyUI + Tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -48,11 +61,11 @@
 
             <div class=" hidden md:flex md:gap-[2rem]">
                 <i class="fa-brands fa-facebook text-[2rem]"></i>
-                <i class="fa-brands fa-twitter text-[2rem]"></i>
+                <i class="fa-brands fa-x-twitter text-[2rem]"></i>
                 <i class="fa-brands fa-instagram text-[2rem]"></i>
             </div>
 
-            <div class=" gap-[16rem] justify-between flex md:gap-[2rem]">
+            <div class="flex justify-between items-center w-full md:w-auto md:gap-[2rem]">
                 <a href="#"><i class="fa-solid fa-magnifying-glass text-[2rem]"></i></a>
                 <a href="#"><button class=" py-[0.2rem] px-[0.8rem] rounded-lg border-black border-[0.2rem]"> Login</button></a>
             </div>
@@ -66,7 +79,7 @@
                 <li><a href="#" class=" ">Home Page</a></li>
                 <li><a href="#" class=" ">Recipe Page</a></li>
                 <li><a href="#" class=" ">Categories</a></li>
-                <li><a href="#" class=" ">Favorite</a></li>
+                <li><a href="Favorites_page.html" class=" ">Favorite</a></li>
             </ul>
         </div>
 
@@ -160,13 +173,66 @@
         </section>
         <!-- Popular Categories End -->
 
+        
     </main>
 
     <footer>
+      <div class="footer bg-base-200 text-base-content p-10">
+        <aside class=" md:mr-[18rem]">
+            <h1 id="kaushan-script-regular" class=" mt-[1rem] md:mt-[3.375rem] font-normal mb-[0.7rem] text-[1.81rem] md:text-[2.8rem]">Shusshadu</h1>
+          <p class=" text-[#787474] font-normal">
+            On the other hand , we denounce with <br>
+            righteous indignation and dislike men who are <br>
+            so beguiled and demoralized by the charms of <br>
+            pleasure of the moment
+          </p>
+        </aside>
 
+        <nav>
+          <h6 class=" md:mt-[3.375rem] mb-2 text-[1.25rem] font-bold text-black ">Shusshadu</h6>
+          <a class="link link-hover font-normal">Branding</a>
+          <a class="link link-hover font-normal">Design</a>
+          <a class="link link-hover font-normal">Marketing</a>
+          <a class="link link-hover font-normal">Advertisement</a>
+        </nav>
 
-    </footer>
+        <nav>
+          <h6 class=" md:mt-[3.375rem] mb-2  text-[1.25rem] font-bold text-black ">Legal</h6>
+          <a class="link link-hover font-normal">Terms & Conditions</a>
+          <a class="link link-hover font-normal">Cookies</a>
+          <a class="link link-hover font-normal">Copyright</a>
+        </nav>
 
+        <nav>
+          <h6 class=" md:mt-[3.375rem] mb-2  text-[1.25rem] font-bold text-black ">Follow</h6>
+          <a class="link link-hover font-normal">Facebook</a>
+          <a class="link link-hover font-normal">Twitter</a>
+          <a class="link link-hover font-normal">Instagram</a>
+          <a class="link link-hover font-normal">Youtube</a>
+        </nav>
+      </div>
+
+     
+      
+      <div class=" bg-base-200 text-base-content ">
+        <hr class="mx-[2rem] border-[0.07rem] border-[#000000]  " />
+
+        <div class=" md:flex md:justify-between p-10">
+
+        <p class="text-[#787474] font-normal">2024 Shusshadu - All rights reserved.</p>
+
+          <div class=" flex mt-[2rem] gap-[1rem] md:mt-0 md:flex md:gap-[2rem]">
+            <i class="fa-brands fa-facebook text-[#757575] text-[2rem]"></i>
+            <i class="fa-brands fa-x-twitter text-[#757575] text-[2rem]"></i>
+            <i class="fa-brands fa-instagram text-[#757575] text-[2rem]"></i>
+            <i class="fa-brands fa-youtube text-[#757575] text-[2rem]"></i>
+ 
+        </div>
+
+      </div>
+    </div>
+      </footer>
+      
 </body>
 
 </html>
