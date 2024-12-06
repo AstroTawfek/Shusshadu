@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Name -->
+    <title>Profile</title>
+    <!-- linking with css file -->
+    <link rel="stylesheet" href="favorites_page.css">
+    <!-- font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+            #kaushan-script-regular {
+        font-family: "Kaushan Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        }
+    </style>
+    <!-- font CDN 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+            .inter-font {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        }
+    </style>
+
+        <!-- Font CDN 3 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;1,600&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    
+        <style>
+            #judson-bold {
+              font-family: "Judson", serif;
+              font-weight: 700;
+              font-style: normal;
+            }
+        </style>
+
+
+    <!-- DaisiUI + Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icon CDN -->
+    <script src="https://kit.fontawesome.com/54d3cb8a03.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="inter-font">
+    <header class=" mx-[1rem] md:mx-[10rem]">
+        <nav class="flex justify-between items-center mt-[4.9rem]">
+            <h1 id="kaushan-script-regular" class="font-normal text-[1.8rem] md:text-[3.4rem]">Shusshadu</h1>
+            <ul class="hidden md:flex md:gap-[3.375rem]">
+                <li><a href="index.html" class="font-semibold text-[1.25rem]">Home Page</a></li>
+                <li><a href="#" class="font-semibold text-[1.25rem]">Recipe Page</a></li>
+                <li><a href="#" class="font-semibold text-[1.25rem]">Categories</a></li>
+                <li><a href="#" class="font-semibold text-[1.25rem]">Favourites</a></li>
+            </ul>
+            <div class="flex gap-[2rem]">
+                <a href="#"><i class="fa-solid fa-magnifying-glass text-[1.25rem] md:text-[2rem]"></i></a>
+                <a href="Profile_page.html">
+                    <img class="hidden md:inline-block rounded-full border border-black" src="accessories/images.png" alt="Profile Picture">
+                    <img class="md:hidden rounded-full border border-black" src="accessories/images_responsive.png" alt="Profile Picture">
+                </a>
+                <i class="md:hidden fa-solid fa-bars text-[1.25rem]"></i>
+            </div>
+        </nav>
+    </header>
+
+<main>
+
+        <!-- Save and Profile -->
+        <section class="mx-auto px-4 lg:px-[10rem] pb-8 pt-16">
+            <div class=" flex justify-between">
+                <h1 id="judson-bold" class="text-3xl font-bold mb-4">Profile</h1>
+                <button class="bg-[#FF7A4D] text-white px-4 py-2 rounded mb-4">Save</button>
+            </div>
+            
+            <hr class="mb-4">
+    
+            <div class="flex justify-between gap-[2rem] items-center mt-[2.4rem] ">
+                    <img src="https://i.ibb.co.com/txw9Drt/lr1.png" alt="Profile" class="w-24 h-24 rounded-full mr-4">
+                    <div class="flex-grow">
+                        <div class=" flex gap-6">
+                        <button id="judson-bold" class="bg-[#FF7A4D] text-white px-[0.82rem] py-[0.5rem] md:px-4 md:py-2 rounded">Change Profile</button>
+                        <button id="judson-bold" class="border border-black  px-[0.82rem] py-[0.5rem] md:px-4 md:py-2 rounded">Delete</button>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- Save and Profile Done -->
+
+            <!-- Form Section -->
+     
+    <section class="mx-auto px-4 lg:px-[10rem] ">   
+        <div>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div  id="judson-bold">
+                <label class=" text-[1.8rem] font-light text-[#7B7272]">Full Name</label>
+                <div class="flex items-center border-b border-gray-300 py-2">
+                    <i class="fa-solid fa-user mr-2 text-[#979494]" ></i>
+                    <input type="text" value="Sajed Rahman" class="flex-grow outline-none text-[#979494]" placeholder="a" >
+                </div>
+            </div>
+    
+            <div id="judson-bold">
+                <label  class="text-[1.8rem] font-light text-[#7B7272]">UserName</label>
+                <div class="flex items-center border-b border-gray-300 py-2">
+                    <i class="fa-solid fa-at mr-2 text-[#979494]"></i>
+                    <input type="text" value="Sajed_rahman" class="flex-grow outline-none text-[#979494]" placeholder="b">
+                </div>
+            </div>
+    
+            <div id="judson-bold">
+                <label  class="  text-[1.8rem] font-light text-[#7B7272]">Email</label>
+                <div class="flex items-center border-b border-gray-300 py-2">
+                    <i class="fa-solid fa-envelope mr-2 text-[#979494]"></i>
+                    <input type="text" value="Sajed123@gmail.com" class="flex-grow outline-none  text-[#979494]" placeholder="c">
+                </div>
+            </div>
+    
+            <div id="judson-bold" class="relative">
+                <label  class=" text-[1.8rem] font-light text-[#7B7272]">Password</label>
+                <div class="flex items-center border-b border-gray-300 py-2">
+                    <i class="fa-solid fa-lock mr-2 text-[#979494]"></i>
+                    <input type="password" value="••••••" class="flex-grow outline-none text-[#979494]" placeholder="d">
+                </div>
+                <button class="text-orange-500 absolute right-0 mt-2">Change</button>
+            </div>
+    </div>
+         </section>
+        <!-- Form Section Done -->
+    
+         <!-- Social Media and Newsletter Section -->
+    <section id="judson-bold" class="mx-auto px-4 lg:px-[10rem] ">
+        <div>
+            <h2 class=" text-[1rem] md:text-[1.2rem] font-bold mt-[4rem] mb-[2rem]">Connected Accounts</h2>
+        
+            <div class="mb-4">
+                <div class="flex justify-between items-center mb-[2rem]">
+                    <div>
+                        <h3 class=" text-[1.8rem] md:text-[2.4rem] text-[#004F9D] font-bold">Facebook</h3>
+                        <p class="text-[#979494] font-normal">Sajed Rahman</p>
+                    </div>
+                    <span class=" text-[#000000] font-normal">Disconnected</span>
+                </div>
+                <hr class="my-2 border-gray-300">
+            </div>
+
+            <div class="mb-4 mt-[2.8rem]">
+                <div class="flex justify-between items-center mb-[2rem]">
+                    <div>
+                        <h3 class="text-[1.8rem] md:text-[2.4rem] text-[#004F9D] font-bold">
+                            G<span class="text-[#FA3913]">o</span><span class=" text-[#FCBE0A]" >o</span>g<span class=" text-[#38B137]">l</span><span class="text-[#FA3913]">e</span></h3>
+                        <p class="text-[#979494] font-normal">Sajed123@gmail.com</p>
+                    </div>
+                    <span class=" text-[#000000] font-normal">Disconnected</span>
+                </div>
+                <hr class="my-2 border-gray-300">
+            </div>
+
+            <div class="mb-4 mt-[2.8rem]">
+                <div class=" md:flex  justify-between items-center mb-[2rem]">
+                    <div>
+                        <h3 class="text-[1.4rem] md:text-[2.4rem] text-black font-bold md:mb-0 mb-4">Newsletter</h3>
+                        <p class="text-black font-normal md:mb-0 mb-8">You Are Currently Subscribed to  Our newsletter</p>
+                    </div>
+                    <button class="btn btn-outline font-bold">Unsubscribe</button>
+                </div>
+                <hr class="my-2 border-gray-300">
+            </div>
+        </div>
+    </section>
+    <!-- Social Media and Newsletter Section Done-->
+
+        <!-- Sign Out Section -->
+        <section id="judson-bold" class="mx-auto px-4 lg:px-[10rem] md:mt-[4rem]">
+            <div class="flex justify-between items-center p-4">
+                <button class="flex items-center">
+                    <i class="fas fa-sign-out-alt mr-2 md:text-[2rem]"></i>
+                    <span class="md:text-lg">Sign Out</span>
+                </button>
+                <a href="#" class="text-orange-500 md:text-lg hover:underline">Delete Account</a>
+            </div>
+    
+        </section>
+        <!-- Sign Out Section Done -->
+
+
+
+</main>
+
+    <footer>
+        <footer class="bg-[#F9F9F9] w-full mt-20">
+            <div class="container mx-auto px-4 lg:px-[10rem] pb-8 pt-16">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                    <!-- Logo and Description Section -->
+                    <div class="lg:col-span-4">
+                        <h2 id="kaushan-script-regular" class="font-normal text-[2.5rem] mb-6 text-[#222]">Shusshadu</h2>
+                        <p class="text-gray-500 text-[0.9rem] leading-[1.8] max-w-[90%]">
+                            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment
+                        </p>
+                    </div>
+        
+                    <!-- Navigation Sections -->
+                    <div class="lg:col-span-8">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                            <!-- Shusshadu Links -->
+                            <div>
+                                <h3 class="font-bold text-[1.125rem] mb-8 text-[#222]">Shusshadu</h3>
+                                <ul class="space-y-5">
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">About us</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Carrers</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Contact Us</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Feedback</a></li>
+                                </ul>
+                            </div>
+        
+                            <!-- Legal Links -->
+                            <div>
+                                <h3 class="font-bold text-[1.125rem] mb-8 text-[#222]">Legal</h3>
+                                <ul class="space-y-5">
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Terms & Conditions</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Cookies</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Copyright</a></li>
+                                </ul>
+                            </div>
+        
+                            <!-- Follow Links -->
+                            <div>
+                                <h3 class="font-bold text-[1.125rem] mb-8 text-[#222]">Follow</h3>
+                                <ul class="space-y-5">
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Facebook</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Twitter</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Instagram</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Divider -->
+                <div class="border-t border-gray-400 my-16"></div>
+        
+                <!-- Bottom Section -->
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-[0.9rem]">Shusshadu - All rights reserved To Team "Hidden Zeta"</p>
+                    <div class="flex items-center gap-10 mt-6 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-brands fa-facebook-f text-[1.1rem]"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-brands fa-twitter text-[1.1rem]"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-brands fa-instagram text-[1.1rem]"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-brands fa-youtube text-[1.1rem]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+</body>
+
+</html>
