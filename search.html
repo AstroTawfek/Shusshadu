@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Name -->
+    <title>Search</title>
+    <!-- linking with css file -->
+    <link rel="stylesheet" href="favorites_page.css">
+    <!-- font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+            #kaushan-script-regular {
+        font-family: "Kaushan Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        }
+    </style>
+    <!-- font CDN 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+            .inter-font {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        }
+    </style>
+
+        <!-- Font CDN 3 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;1,600&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    
+        <style>
+            #judson-bold {
+              font-family: "Judson", serif;
+              font-weight: 700;
+              font-style: normal;
+            }
+        </style>
+
+
+    <!-- DaisiUI + Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icon CDN -->
+    <script src="https://kit.fontawesome.com/54d3cb8a03.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="inter-font">
+
+<!-- NavBar Section -->
+    <header class=" mx-[1rem] md:mx-[10rem]">
+        <nav class="flex justify-between items-center mt-[4.9rem]">
+            
+            <h1 id="kaushan-script-regular" class="font-normal text-[2rem] md:text-[3.4rem]">Shusshadu</h1>
+            <ul class="hidden md:flex md:gap-[3.375rem]">
+                <li><a href="index.html" class="font-semibold text-[1.25rem]">Home Page</a></li>
+                <li><a href="#" class="font-semibold text-[1.25rem]">Recipe Page</a></li>
+                <li><a href="#" class="font-semibold text-[1.25rem]">Categories</a></li>
+                <li><a href="#" class="font-semibold text-[1.25rem]">Favourites</a></li>
+            </ul>
+
+            <div class="flex gap-[2rem]">
+                <!-- Search Icon And The Id For Seaching -->
+                <i id="searchButton" class="fa-solid fa-magnifying-glass text-[2rem] md:text-[2rem] hover:text-[#FF7A4D]"></i>
+                <a href="#">
+                    <img class="hidden md:inline-block rounded-full border border-black" src="https://i.ibb.co.com/TT335zZ/images.png" alt="Profile Picture">
+                    <img class="md:hidden rounded-full border border-black" src="https://i.ibb.co.com/TT335zZ/images.png" alt="Profile Picture">
+                </a>
+                <i class="md:hidden fa-solid fa-bars text-[2rem]"></i>
+            </div>
+        </nav>
+<!-- NavBar Section Done-->
+
+<!-- Div For search bar functionality -->
+<div >
+    <!-- Other elements here -->
+    <div class="flex gap-[2rem] relative w-full">
+        <div id="searchContainer" class="hidden absolute top-full left-0 bg-[#FF642F] border border-gray-300 rounded shadow-lg w-full mt-2 z-10">
+            <input id="searchInput" type="text" class="border-b border-gray-300 p-4 w-full focus:outline-none" placeholder="Search...">
+            <div id="searchResults" class="overflow-auto"></div>
+        </div>
+    </div>
+</div>
+<!-- Div For search bar functionality -->
+
+</header>
+
+
+<main>
+<!-- Search Interface Section -->
+<div id="searchInterface" class="hidden mt-6 max-w-7xl mx-auto px-4">
+    <div class="relative">
+        <input type="text" id="searchInput" placeholder="Search..." class="border border-gray-300 rounded-lg w-full py-2 px-4" />
+        <button id="closeButton" class="absolute right-2 top-2 text-gray-500">✖️</button>
+    </div>
+    <div id="results" class="mt-4">
+        <ul id="resultList" class="bg-white shadow rounded-lg">
+            <!-- Results will be populated here -->
+        </ul>
+        <button class="mt-4 text-blue-500">See all 343 results</button>
+    </div>
+    
+</div>
+<!-- Search Interface Section Done -->
+
+
+<!-- Special Food Section -->
+<section class=" mx-[2rem] mt-[4rem] md:mx-[10rem] md:mt-[4rem] mb-[4rem]">
+        <h2  class="mt-8 text-2xl font-bold mb-10">Super Delicious</h2>
+    <div class="  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+        <div class="bg-white p-4 rounded-lg shadow mb-[1rem] md:mb-0">
+            <img src="https://i.ibb.co.com/7tGv9H1/mutton-biriyani-recipe.jpg" alt="Dish" class="w-full object-cover rounded">
+            <p class="text-[#F2A126] text-[2rem]">★ ★ ★ ★ ★</p>
+            <h2 class="text-lg font-bold">Biryani</h2>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow mb-[1rem] md:mb-0">
+            <img src="https://i.ibb.co.com/7YFnXvw/Chicken-Korma-1-16.jpg" alt="Dish" class="w-full  object-cover rounded">
+            <p class="text-[#F2A126] text-[2rem]">★ ★ ★ ★ ★</p>
+            <h2 class="text-lg font-bold">Chicken Korma</h2>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+            <img src="https://i.ibb.co.com/7WVWDPL/Ranga-Aloo-er-Payesh-4.jpg" alt="Dish" class="w-full object-cover rounded">
+            <p class="text-[#F2A126] text-[2rem]">★ ★ ★ ★ ★</p>
+            <h2 class="text-lg font-bold">Payesh</h2>
+        </div>
+    </div>
+    </section>
+<!-- Special Food Section End -->
+
+<!-- Popular Categories -->
+<section class=" mx-[2rem] mt-[2rem] md:mx-[10rem] md:mt-[4rem] mb-[4rem]">
+    <h1 id="judson-bold" class=" font-bold text-[2.1rem] mb-[3rem]">Popular Categories</h1>
+    <div class=" grid grid-cols-3 gap-4 md:grid-cols-5">
+
+        <div class="flex flex-col items-center"> 
+            <img class=" h-[6.25rem] md:h-auto" src="https://i.ibb.co.com/6X5RVD1/Shahi-Korma-recipe-feature-image-small.png" alt="" srcset="">
+            <h1 class=" hidden  md:block md:font-semibold md:text-[1.6rem] mt-0 md:mt-[1rem] ">Chicken Dish</h1>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <img class=" h-[6.25rem] md:h-auto" src="https://i.ibb.co.com/G55jbzK/IMG-20210113-182634a-810x1024.png" alt="" srcset="">
+            <h1 class=" hidden  md:block md:font-semibold md:text-[1.6rem] mt-0 md:mt-[1rem]">Dessert</h1>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <img class=" h-[6.25rem] md:h-auto" src="https://i.ibb.co.com/BrMNYMc/Chingri-Malai-Curry.png" alt="" srcset="">
+            <h1 class=" hidden  md:block md:font-semibold md:text-[1.6rem] mt-0 md:mt-[1rem]">Seafood</h1>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <img class=" h-[6.25rem] md:h-auto" src="https://i.ibb.co.com/J7qG4yb/hq720-3.png" alt="" srcset="">
+            <h1 class=" hidden  md:block md:font-semibold md:text-[1.6rem] mt-0 md:mt-[1rem]">Festive Dish</h1>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <img class=" h-[6.25rem] md:h-auto" src=" https://i.ibb.co.com/FnF2fF8/sorshe-ilish.png" alt="" srcset="">
+            <h1 class=" hidden  md:block md:font-semibold md:text-[1.6rem] mt-0 md:mt-[1rem]">Signature Dish</h1>
+        </div>
+
+        <div class="flex flex-col md:hidden items-center">
+            <img src="https://i.ibb.co.com/GHd8rPS/maxresdefault-2.png" alt="" srcset="">
+            
+        </div>
+    </div>
+</section>
+<!-- Popular Categories End -->
+
+<!-- Hand-Picked Collections Section -->
+<section class=" mx-[2rem] mt-[2rem] md:mx-[10rem] md:mt-[4rem] mb-[4rem]">
+    
+        <h2 id="judson-bold" class="text-[2.2rem] font-bold mb-8">Hand-Picked Collections</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://i.ibb.co.com/RhfqxHV/R.png" alt="Everything Bagel" class=" object-cover rounded-t-lg">
+                <div class="p-4 flex justify-between">
+                    <h3 class="text-lg font-semibold">Biryani Bliss: A Flavorful Journey</h3>
+                   <a href="#"><p class="text-black text-[0.78rem] border-[0.1rem] p-[0.4rem] border-black ">90 Recipes</p></a> 
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://i.ibb.co.com/gWdSy3y/64fedc71ae89e9d58e7ed41e-doodh-cha-4-3.png" alt="Everything Bagel" class="object-cover rounded-t-lg">
+                <div class="p-4 flex justify-between">
+                    <h3 class="text-lg font-semibold">Tea Treasures: A Sip of Serenity</h3>
+                   <a href="#"><p class="text-black text-[0.78rem] border-[0.1rem] p-[0.4rem] border-black ">120 Recipes</p></a> 
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://i.ibb.co.com/2ZzLx3C/Sweet-Rice-Dumplings-Recipe-Mohura-Pitha-1-400.png" alt="Everything Bagel" class="object-cover rounded-t-lg">
+                <div class="p-4 flex justify-between">
+                    <h3 class="text-lg font-semibold">Pitha Pleasures: Traditional Treats</h3>
+                   <a href="#"><p class="text-black text-[0.78rem] border-[0.1rem] p-[0.4rem] border-black ">100 Recipes</p></a> 
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://i.ibb.co.com/fM5Tgqf/photo-1.png" alt="Everything Bagel" class=" object-cover rounded-t-lg">
+                <div class="p-4 flex justify-between">
+                    <h3 class="text-lg font-semibold">Kathal Kitchen: Jackfruit Wonders</h3>
+                   <a href="#"><p class="text-black text-[0.78rem] border-[0.1rem] p-[0.4rem] border-black ">80 Recipes</p></a> 
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://i.ibb.co.com/2sFd8KT/Ranga-Aloo-er-Payesh-4-1.png" alt="Everything Bagel" class="object-cover rounded-t-lg">
+                <div class="p-4 flex justify-between">
+                    <h3 class="text-lg font-semibold">Payesh Perfection: Sweet Elegance</h3>
+                   <a href="#"><p class="text-black text-[0.78rem] border-[0.1rem] p-[0.4rem] border-black ">60 Recipes</p></a> 
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://i.ibb.co.com/h79my0J/sorshe-ilish-1.png" alt="Everything Bagel" class=" object-cover rounded-t-lg">
+                <div class="p-4 flex justify-between">
+                    <h3 class="text-lg font-semibold">Ilish Inspirations: A Fish Lover's Dream</h3>
+                   <a href="#"><p class="text-black text-[0.78rem] border-[0.1rem] p-[0.4rem] border-black ">80 Recipes</p></a> 
+                </div>
+            </div>
+
+           
+        </div>
+    
+</section>
+<!-- Hand-Picked Collections Section Done -->
+
+<!-- Recommendation Section -->
+<section class="bg-[#FFD7C9] mt-[4rem] md:mt-[4rem] ">
+          
+    <div class="container mx-auto text-center py-20">
+        <h1 id="judson-bold" class=" text-[4rem] md:text-[4.6rem] font-bold mb-4">Deliciousness<br> to your inbox</h1>
+        <p class=" mx-[2rem] text-lg font-normal mb-10">Enjoy weekly hand picked recipes and recommendations</p>
+        <div class="flex items-center justify-center flex-col sm:flex-row">
+          <input type="email" placeholder="Email Address" class="bg-white px-4 py-3 rounded-md  md:rounded-r-none mb-4 sm:mb-0 sm:w-auto w-[70%] focus:outline-none focus:ring focus:ring-orange-600 focus:ring-opacity-50">
+          <button class="bg-orange-500 md:rounded-l-none hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-md sm:w-auto w-[70%]">Join</button>
+      </div>              
+      
+    </div>
+
+</section>
+<!-- Recommendation Section End -->
+</main>
+
+<!-- Footer Section -->
+    <footer>
+      <div class="footer bg-base-200 text-base-content p-10">
+        <aside class=" md:mr-[18rem]">
+            <h1 id="kaushan-script-regular" class=" mt-[1rem] md:mt-[3.375rem] font-normal mb-[0.7rem] text-[1.81rem] md:text-[2.8rem]">Shusshadu</h1>
+          <p class=" text-[#787474] font-normal">
+            On the other hand , we denounce with <br>
+            righteous indignation and dislike men who are <br>
+            so beguiled and demoralized by the charms of <br>
+            pleasure of the moment
+          </p>
+        </aside>
+
+        <nav>
+          <h6 class=" md:mt-[3.375rem] mb-2 text-[1.25rem] font-bold text-black ">Shusshadu</h6>
+          <a class="link link-hover font-normal">Branding</a>
+          <a class="link link-hover font-normal">Design</a>
+          <a class="link link-hover font-normal">Marketing</a>
+          <a class="link link-hover font-normal">Advertisement</a>
+        </nav>
+
+        <nav>
+          <h6 class=" md:mt-[3.375rem] mb-2  text-[1.25rem] font-bold text-black ">Legal</h6>
+          <a class="link link-hover font-normal">Terms & Conditions</a>
+          <a class="link link-hover font-normal">Cookies</a>
+          <a class="link link-hover font-normal">Copyright</a>
+        </nav>
+
+        <nav>
+          <h6 class=" md:mt-[3.375rem] mb-2  text-[1.25rem] font-bold text-black ">Follow</h6>
+          <a class="link link-hover font-normal">Facebook</a>
+          <a class="link link-hover font-normal">Twitter</a>
+          <a class="link link-hover font-normal">Instagram</a>
+          <a class="link link-hover font-normal">Youtube</a>
+        </nav>
+      </div>
+
+     
+      
+      <div class=" bg-base-200 text-base-content ">
+        <hr class="mx-[2rem] border-[0.07rem] border-[#000000]  " />
+
+        <div class=" md:flex md:justify-between p-10">
+
+        <p class="text-[#787474] font-normal">2024 Shusshadu - All rights reserved.</p>
+
+          <div class=" flex mt-[2rem] gap-[1rem] md:mt-0 md:flex md:gap-[2rem]">
+            <i class="fa-brands fa-facebook text-[#757575] text-[2rem]"></i>
+            <i class="fa-brands fa-x-twitter text-[#757575] text-[2rem]"></i>
+            <i class="fa-brands fa-instagram text-[#757575] text-[2rem]"></i>
+            <i class="fa-brands fa-youtube text-[#757575] text-[2rem]"></i>
+ 
+        </div>
+
+      </div>
+    </div>
+      </footer>
+<!-- Footer Section Done-->
+
+<script src="search.js"></script>
+
+</body>
+
+</html>
