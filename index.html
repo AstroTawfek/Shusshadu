@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+    <!-- Font CDN 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+        #kaushan-script-regular {
+            font-family: "Kaushan Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+          }
+    </style>
+
+    <!-- Font CDN 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <style>
+        .inter-font {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+          }
+    </style>
+
+    <!-- Font CDN 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;1,600&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        #judson-bold {
+          font-family: "Judson", serif;
+          font-weight: 700;
+          font-style: normal;
+        }
+    </style>
+
+    <!-- DaisyUI + Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icon CDN -->
+    <script src="https://kit.fontawesome.com/84757c07df.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body class="inter-font">
+
+
+    <header>
+        <div class=" mx-[2rem] mt-[2rem] md:mx-[10rem] md:mt-[2rem] flex justify-between">
+
+            <div class=" hidden md:flex md:gap-[2rem]">
+                <i class="fa-brands fa-facebook text-[2rem]"></i>
+                <i class="fa-brands fa-x-twitter text-[2rem]"></i>
+                <i class="fa-brands fa-instagram text-[2rem]"></i>
+            </div>
+
+            <div class="flex justify-between items-center w-full md:w-auto md:gap-[2rem]">
+                <a href="search.html"><i class="fa-solid fa-magnifying-glass text-[2rem]"></i></a>
+
+                <a href="Profile_page.html">
+                <img class="hidden md:inline-block rounded-full border border-black" src="https://i.ibb.co.com/TT335zZ/images.png" alt="Profile Picture">
+                <img class="md:hidden rounded-full border border-black" src="https://i.ibb.co.com/TT335zZ/images.png" alt="Profile Picture">
+                </a>
+                  <i class="md:hidden fa-solid fa-bars text-[1.25rem]"></i>
+              
+  
+            </div>
+
+        </div>
+
+        <center><h1 id="kaushan-script-regular" class=" mt-[1rem] md:mt-0 font-normal text-[1.81rem] md:text-[3.4rem]">Shusshadu</h1></center>
+
+        <div class=" hidden md:flex md:justify-center md:mt-[2rem]">
+            <ul class=" hidden md:flex md:gap-8">
+                <li class=" hover:text-orange-500 "><a href="index.html" >Home Page</a></li>
+                <li class=" hover:text-orange-500 "><a href="recipe.html" class=" ">Recipe Page</a></li>
+                <li class=" hover:text-orange-500 "><a href="category.html" class=" ">Categories</a></li>
+                <li class=" hover:text-orange-500 "><a href="Favorites_page.html" class=" ">Favorite</a></li>
+            </ul>
+        </div>
+
+        <!-- Food Carousel -->
+        <div class="carousel w-full mt-[2rem]">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img
+                src=" Assests/food1.png"
+                alt="Food1"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="Assests/food2.png"
+                alt="food2"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="Assests/food3.png"
+                alt=""
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="Assests/food4.png"
+                alt=""
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        <!-- Food Carousel End-->
+
+    </header>
+
+    <main>
+        <!-- Popular Categories -->
+        <section class=" mx-[2rem] mt-[2rem] md:mx-[10rem] md:mt-[4rem] mb-[4rem]">
+            <h1 class=" font-bold text-[2rem] mb-[3rem] transition-transform duration-500 ease-in-out hover:scale-105 hover:text-[#F59E0B]">Popular Categories</h1>
+
+            <div class=" grid grid-cols-3 gap-4 md:grid-cols-5">
+
+                <div class="flex flex-col items-center  transition-transform duration-500 ease-in-out hover:scale-110 hover:opacity-90"> 
+                    <img class=" h-[6.25rem] md:h-auto" src="https://i.ibb.co.com/cFzqdRn/Tandoori-Chicken-Recipe.png" alt="" srcset="">
+                    <h1 class=" hidden  md:block md:font-semibold md:text-[1.6rem] mt-0 md:mt-[1rem]">Chicken Dish</h1>
+                </div>
+
+                <div class="flex flex-col items-center  transition-transform duration-500 ease-in-out hover:scale-110 hover:opacity-90">
+                    <img class=" h-[6.25rem] md:h-auto" src="https://i.ibb.co.com/THmPWGT/Ilish-Beguner-Jhol-recipe-debjanir-rannaghar.png" alt="" srcset="">
+                    <h1 class=" hidden  md:block md:font-semibold md:text-[1.6rem] mt-0 md:mt-[1rem]">Hilsha Fish</h1>
+                </div>
+
+                <div class="flex flex-col items-center  transition-transform duration-500 ease-in-out hover:scale-110 hover:opacity-90">
+                    <img class=" h-[6.25rem] md:h-auto" src="https://i.ibb.co.com/2SKkDxC/Biryani.png" alt="" srcset="">
+                    <h1 class=" hidden  md:block md:font-semibold md:text-[1.6rem] mt-0 md:mt-[1rem]">Festive Dish</h1>
+                </div>
+
+                <div class="flex flex-col items-center  transition-transform duration-500 ease-in-out hover:scale-110 hover:opacity-90">
+                    <img class=" h-[6.25rem] md:h-auto" src=" Assests/Pastry.png" alt="" srcset="">
+                    <h1 class=" hidden  md:block md:font-semibold md:text-[1.6rem] mt-0 md:mt-[1rem]">Pastry</h1>
+                </div>
+
+                <div class="flex flex-col items-center  transition-transform duration-500 ease-in-out hover:scale-110 hover:opacity-90">
+                    <img class=" h-[6.25rem] md:h-auto" src=" https://i.ibb.co.com/G55jbzK/IMG-20210113-182634a-810x1024.png" alt="" srcset="">
+                    <h1 class=" hidden  md:block md:font-semibold md:text-[1.6rem] mt-0 md:mt-[1rem]">Payesh</h1>
+                </div>
+
+                <div class="flex flex-col md:hidden items-center  transition-transform duration-500 ease-in-out hover:scale-110 hover:opacity-90">
+                    <img src=" Assests/fry.png" alt="" srcset="">
+                </div>
+
+            </div>
+        </section>
+        <!-- Popular Categories End -->
+
+        <!-- Featured Food Menu Section -->
+        <section class=" mx-[2rem] mt-[4rem] md:mx-[10rem] md:mt-[4rem] mb-[4rem]">
+          <h1 class="text-2xl font-bold text-gray-800 mb-6 transition-transform duration-500 ease-in-out hover:scale-105 hover:text-[#F59E0B]">Super Delicious</h1>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            
+            <!-- Card 1-->
+            <div class="bg-white rounded-lg hover:shadow-orange-400 shadow-md overflow-hidden transform transition duration-500 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:rotate-1">
+              <img class="w-full h-48 object-cover transition-transform duration-500 ease-in-out hover:scale-110" src="https://i.ibb.co.com/V9NVmxX/Singara-History.jpg" alt="Singara">
+              <div class="p-4">
+                <p class="text-[#F2A126] text-[2rem] transition-colors duration-300 ease-in-out hover:text-[#D97706]">★ ★ ★ ★ ★</p>
+                <h2 class="text-lg font-semibold transition-transform duration-500 ease-in-out hover:scale-105">Crispy Bengali Singara</h2>
+                <p class="text-gray-600 text-sm mt-2 flex items-center">
+                  <img class="w-6 h-6 rounded-full mr-2" src="Assests/c3.jpg" alt="Chef"> Rafiq Ahmed
+                </p>
+              </div>
+            </div>
+      
+            <!-- Card 2-->
+            <div class="bg-white rounded-lg   hover:shadow-orange-400 shadow-md overflow-hidden transform transition duration-500 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:rotate-1">
+              <img class="w-full h-48 object-cover transition-transform duration-500 ease-in-out hover:scale-110" src="Assests/r-2.png" alt="Classic Cheese Pizza">
+              <div class="p-4">
+                <p class="text-[#F2A126] text-[2rem] transition-colors duration-300 ease-in-out hover:text-[#D97706]">★ ★ ★ ★ ★</p>
+                <h2 class="text-lg font-semibold transition-transform duration-500 ease-in-out hover:scale-105">Classic Cheese Pizza</h2>
+                <p class="text-gray-600 text-sm mt-2 flex items-center">
+                  <img class="w-6 h-6 rounded-full mr-2" src="Assests/c4.jpg" alt="Chef"> Shabnam Akter
+                </p>
+              </div>
+            </div>
+      
+            <!-- Card 3-->
+            <div class="bg-white rounded-lg  hover:shadow-orange-400 shadow-md overflow-hidden transform transition duration-500 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:rotate-1">
+              <img class="w-full h-48 object-cover transition-transform duration-500 ease-in-out hover:scale-110" src="https://i.ibb.co.com/2sFd8KT/Ranga-Aloo-er-Payesh-4-1.png" alt="Golden Syrup Pudding">
+              <div class="p-4">
+                <p class="text-[#F2A126] text-[2rem] transition-colors duration-300 ease-in-out hover:text-[#D97706]">★ ★ ★ ★ ★</p>
+                <h2 class="text-lg font-semibold transition-transform duration-500 ease-in-out hover:scale-105">Creamy Bengali Payesh</h2>
+                <p class="text-gray-600 text-sm mt-2 flex items-center">
+                  <img class="w-6 h-6 rounded-full mr-2" src="Assests/c5.jpg" alt="Chef"> Hasibul Karim
+                </p>
+              </div>
+            </div>
+      
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg hover:shadow-orange-400 shadow-md overflow-hidden transform transition duration-500 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:rotate-1">
+              <img class="w-full h-48 object-cover transition-transform duration-500 ease-in-out hover:scale-110" src="Assests/r-4.png" alt="Morog Polao">
+              <div class="p-4">
+                <p class="text-[#F2A126] text-[2rem] transition-colors duration-300 ease-in-out hover:text-[#D97706]">★ ★ ★ ★ ★</p>
+                <h2 class="text-lg font-semibold transition-transform duration-500 ease-in-out hover:scale-105">Morog Polao</h2>
+                <p class="text-gray-600 text-sm mt-2 flex items-center">
+                  <img class="w-6 h-6 rounded-full mr-2" src="Assests/c2.jpg" alt="Chef"> Farzana Chowdhury
+                </p>
+              </div>
+            </div>
+      
+            <!-- Card 5 -->
+            <div class="bg-white rounded-lg  hover:shadow-orange-400 shadow-md overflow-hidden transform transition duration-500 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:rotate-1">
+              <img class="w-full h-48 object-cover transition-transform duration-500 ease-in-out hover:scale-110" src="Assests/r-5.png" alt="Beef Tehari">
+              <div class="p-4">
+                <p class="text-[#F2A126] text-[2rem] transition-colors duration-300 ease-in-out hover:text-[#D97706]">★ ★ ★ ★ ★</p>
+                <h2 class="text-lg font-semibold transition-transform duration-500 ease-in-out hover:scale-105">Beef Tehari</h2>
+                <p class="text-gray-600 text-sm mt-2 flex items-center">
+                  <img class="w-6 h-6 rounded-full mr-2" src="Assests/c1.jpg" alt="Chef"> Mizanur Rahman
+                </p>
+              </div>
+            </div>
+      
+            <!-- Card 6 -->
+            <div class="bg-white rounded-lg  hover:shadow-orange-400 shadow-md overflow-hidden transform transition duration-500 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:rotate-1">
+              <img class="w-full h-48 object-cover transition-transform duration-500 ease-in-out hover:scale-110" src="Assests/r-6.png" alt="Kacchi">
+              <div class="p-4">
+                <p class="text-[#F2A126] text-[2rem] transition-colors duration-300 ease-in-out hover:text-[#D97706]">★ ★ ★ ★ ★</p>
+                <h2 class="text-lg font-semibold transition-transform duration-500 ease-in-out hover:scale-105">Kacchi</h2>
+                <p class="text-gray-600 text-sm mt-2 flex items-center">
+                  <img class="w-6 h-6 rounded-full mr-2" src="Assests/c6.jpg" alt="Chef"> Rafiq Ahmed
+                </p>
+              </div>
+            </div>
+      
+          </div>
+        </section>
+        <!-- Featured Food Menu Section -->
+
+        <!-- Latest Recipe Section -->
+        <section class=" mx-[2rem] mt-[4rem] md:mx-[10rem] md:mt-[4rem] mb-[4rem]">
+          <h2 class="text-2xl font-semibold mb-6 transition-transform duration-500 ease-in-out hover:scale-105 hover:text-[#F59E0B]">Latest Recipe</h2>
+          <div id="recipe-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Recipe items will be added here -->
+          </div>
+          <div class="text-center mt-8">
+            <button id="load-more-btn" class="px-6 py-2 border border-[#F2A126] text-[#F2A126] rounded hover:bg-[#F2A126] hover:text-white transition-all duration-500 hover:scale-110">
+              Load More
+            </button>
+
+
+          </div>
+        </section>
+        <!-- Latest Recipe Section End-->
+
+       
+<!-- Inbox Section -->
+  <section class="bg-[#FFD7C9] mt-[4rem] md:mt-[4rem] relative overflow-hidden">
+  <div class="container mx-auto text-center py-20 relative z-10">
+    <!-- Floating Background Circles -->
+    <div class="absolute top-10 left-10 w-24 h-24 bg-white opacity-50 rounded-full blur-xl animate-bounce-slow"></div>
+    <div class="absolute top-1/2 right-20 w-36 h-36 bg-orange-300 opacity-40 rounded-full blur-xl animate-pulse"></div>
+    <div class="absolute bottom-10 left-1/4 w-28 h-28 bg-orange-500 opacity-30 rounded-full blur-lg animate-spin-slow"></div>
+
+    <h1 id="judson-bold" class="text-[4rem] md:text-[4.6rem] font-bold mb-4 transition-transform duration-500 ease-in-out hover:scale-110 hover:text-orange-600 animate-fadeIn">
+      Deliciousness<br> to your inbox
+    </h1>
+    <p class="mx-[2rem] text-lg font-normal mb-10 transition-opacity duration-500 ease-in-out hover:opacity-80 animate-fadeIn delay-200">
+      Enjoy weekly hand-picked recipes and recommendations
+    </p>
+    <div class="flex items-center justify-center flex-col sm:flex-row animate-slideInUp">
+      <input 
+        type="email" 
+        placeholder="Email Address" 
+        class="bg-white px-4 py-3 rounded-md md:rounded-r-none mb-4 sm:mb-0 sm:w-auto w-[70%] focus:outline-none focus:ring focus:ring-orange-600 focus:ring-opacity-50 transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-lg">
+      <button 
+        class="bg-orange-500 md:rounded-l-none hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-md sm:w-auto w-[70%] transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-2 hover:shadow-xl">
+        Join
+      </button>
+    </div>              
+  </div>
+</section>
+
+<!-- Inbox Section End -->
+        
+    </main>
+
+    <footer>
+      <div class="footer bg-base-200 text-base-content p-10">
+        <aside class=" md:mr-[18rem]">
+            <h1 id="kaushan-script-regular" class=" mt-[1rem] md:mt-[3.375rem] font-normal mb-[0.7rem] text-[1.81rem] md:text-[2.8rem]">Shusshadu</h1>
+          <p class=" text-[#787474] font-normal">
+            On the other hand , we denounce with <br>
+            righteous indignation and dislike men who are <br>
+            so beguiled and demoralized by the charms of <br>
+            pleasure of the moment
+          </p>
+        </aside>
+
+        <nav>
+          <h6 class=" md:mt-[3.375rem] mb-2 text-[1.25rem] font-bold text-black ">Shusshadu</h6>
+          <a class="link link-hover font-normal">Branding</a>
+          <a class="link link-hover font-normal">Design</a>
+          <a class="link link-hover font-normal">Marketing</a>
+          <a class="link link-hover font-normal">Advertisement</a>
+        </nav>
+
+        <nav>
+          <h6 class=" md:mt-[3.375rem] mb-2  text-[1.25rem] font-bold text-black ">Legal</h6>
+          <a class="link link-hover font-normal">Terms & Conditions</a>
+          <a class="link link-hover font-normal">Cookies</a>
+          <a class="link link-hover font-normal">Copyright</a>
+        </nav>
+
+        <nav>
+          <h6 class=" md:mt-[3.375rem] mb-2  text-[1.25rem] font-bold text-black ">Follow</h6>
+          <a class="link link-hover font-normal">Facebook</a>
+          <a class="link link-hover font-normal">Twitter</a>
+          <a class="link link-hover font-normal">Instagram</a>
+          <a class="link link-hover font-normal">Youtube</a>
+        </nav>
+      </div>
+
+     
+      
+      <div class=" bg-base-200 text-base-content ">
+        <hr class="mx-[2rem] border-[0.07rem] border-[#000000]  " />
+
+        <div class=" md:flex md:justify-between p-10">
+
+        <p class="text-[#787474] font-normal">2024 Shusshadu - All rights reserved.</p>
+
+          <div class=" flex mt-[2rem] gap-[1rem] md:mt-0 md:flex md:gap-[2rem]">
+            <i class="fa-brands fa-facebook text-[#757575] text-[2rem]"></i>
+            <i class="fa-brands fa-x-twitter text-[#757575] text-[2rem]"></i>
+            <i class="fa-brands fa-instagram text-[#757575] text-[2rem]"></i>
+            <i class="fa-brands fa-youtube text-[#757575] text-[2rem]"></i>
+ 
+        </div>
+
+      </div>
+    </div>
+      </footer>
+      <script src="lr.js"></script>
+</body>
+
+</html>
