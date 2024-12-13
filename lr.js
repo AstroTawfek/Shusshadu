@@ -28,10 +28,10 @@ const recipes = [
     for (let i = 0; i < itemsToShow && i < recipes.length; i++) {
       const recipe = recipes[i];
       const recipeCard = `
-        <div class="bg-white  overflow-hidden">
-          <img src="${recipe.image}" alt="${recipe.name}" class="w-full rounded-lg  h-[16rem] object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-bold">${recipe.name}</h3>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-2xl hover:-translate-y-1 animate-fadeIn">
+          <img src="${recipe.image}" alt="${recipe.name}" class="w-full rounded-lg  h-[16rem] object-cover transition-transform duration-500 ease-in-out hover:scale-110">
+          <div class="p-4 ">
+            <h3 class="text-lg font-bold transition-colors duration-300 ease-in-out hover:text-[#F59E0B]">${recipe.name}</h3>
           </div>
         </div>
       `;
