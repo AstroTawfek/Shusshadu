@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <!-- box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        *{
+           font-family: "Inter", sans-serif;
+        }
+        .l {
+            font-family: "Kaushan Script", cursive;
+        }
+        .s {
+            font-family: "Kaushan Script", cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-white sticky top-0 w-[100%]">
+        <nav class="n ">
+            <div class="hamburg flex justify-between items-center p-4 md:mx-[30px]">
+                <div class="logo text-center order-1 md:pl-4">
+                    <span class="l text-4xl md:pr-10 ">Shusshadu</span>
+                </div>
+                <div class="item hidden md:flex justify-center gap-8 items-center order-2">
+                    <div class="items flex justify-center items-center">
+                        <span>Home Page</span>
+                        <div class="arrow pt-1.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#000000" fill="none">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="items flex justify-center items-center">
+                        <span>Recipe Page</span>
+                        <div class="arrow pt-1.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#000000" fill="none">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="items flex justify-center items-center">
+                        <span>Categories</span>
+                        <div class="arrow pt-1.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#000000" fill="none">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="items flex justify-center items-center">
+                        <span>Buy</span>
+                    </div>
+                </div>
+                <div class="left flex justify-between items-center order-2 md:order-3">
+                    <div class="search text-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
+                            viewBox="0 0 30 30">
+                            <path
+                                d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="profile text-center pl-4 md:pr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                            <path
+                                d="M7.5 17C9.8317 14.5578 14.1432 14.4428 16.5 17M14.4951 9.5C14.4951 10.8807 13.3742 12 11.9915 12C10.6089 12 9.48797 10.8807 9.48797 9.5C9.48797 8.11929 10.6089 7 11.9915 7C13.3742 7 14.4951 8.11929 14.4951 9.5Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+
+                    <div class="ham inline-block cursor-pointer p-4 pr-0 md:hidden">
+                        <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                        <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                        <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="initial m-10 my-0 pt-5 md:mx-20">
+            <div class="save flex justify-between items-center">
+                <span class="text">
+                    80% would made this again
+                </span>
+                <div class="sign flex items-center pr-5 gap-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path
+                            d="M12 4.5L12 14.5M12 4.5C11.2998 4.5 9.99153 6.4943 9.5 7M12 4.5C12.7002 4.5 14.0085 6.4943 14.5 7"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20 16.5C20 18.982 19.482 19.5 17 19.5H7C4.518 19.5 4 18.982 4 16.5"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000"
+                        fill="none">
+                        <path
+                            d="M4 17.9808V9.70753C4 6.07416 4 4.25748 5.17157 3.12874C6.34315 2 8.22876 2 12 2C15.7712 2 17.6569 2 18.8284 3.12874C20 4.25748 20 6.07416 20 9.70753V17.9808C20 20.2867 20 21.4396 19.2272 21.8523C17.7305 22.6514 14.9232 19.9852 13.59 19.1824C12.8168 18.7168 12.4302 18.484 12 18.484C11.5698 18.484 11.1832 18.7168 10.41 19.1824C9.0768 19.9852 6.26947 22.6514 4.77285 21.8523C4 21.4396 4 20.2867 4 17.9808Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="title py-5">
+                <span class="text-6xl font-semibold">
+                    Strawberry Cream ChesseCake
+                </span>
+            </div>
+            <div class="profile flex items-center gap-7">
+                <div class="items flex items-center space-x-1">
+                    <div class="pic">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                            <path
+                                d="M7.5 17C9.8317 14.5578 14.1432 14.4428 16.5 17M14.4951 9.5C14.4951 10.8807 13.3742 12 11.9915 12C10.6089 12 9.48797 10.8807 9.48797 9.5C9.48797 8.11929 10.6089 7 11.9915 7C13.3742 7 14.4951 8.11929 14.4951 9.5Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <span>
+                        Md Abir
+                    </span>
+                </div>
+                <div class="items flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000"
+                        fill="none">
+                        <path d="M18 2V4M6 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M11.9955 13H12.0045M11.9955 17H12.0045M15.991 13H16M8 13H8.00897M8 17H8.00897"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M3.5 8H20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M2.5 12.2432C2.5 7.88594 2.5 5.70728 3.75212 4.35364C5.00424 3 7.01949 3 11.05 3H12.95C16.9805 3 18.9958 3 20.2479 4.35364C21.5 5.70728 21.5 7.88594 21.5 12.2432V12.7568C21.5 17.1141 21.5 19.2927 20.2479 20.6464C18.9958 22 16.9805 22 12.95 22H11.05C7.01949 22 5.00424 22 3.75212 20.6464C2.5 19.2927 2.5 17.1141 2.5 12.7568V12.2432Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M3 8H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span>Yesterday</span>
+                </div>
+                <div class="items flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000"
+                        fill="none">
+                        <path
+                            d="M6.09881 19C4.7987 18.8721 3.82475 18.4816 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10.5C2 6.72876 2 4.84315 3.17157 3.67157C4.34315 2.5 6.22876 2.5 10 2.5H14C17.7712 2.5 19.6569 2.5 20.8284 3.67157C22 4.84315 22 6.72876 22 10.5V11C22 14.7712 22 16.6569 20.8284 17.8284C19.6569 19 17.7712 19 14 19C13.4395 19.0125 12.9931 19.0551 12.5546 19.155C11.3562 19.4309 10.2465 20.0441 9.14987 20.5789C7.58729 21.3408 6.806 21.7218 6.31569 21.3651C5.37769 20.6665 6.29454 18.5019 6.5 17.5"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    <span>25</span>
+                </div>
+
+                <div class="flex items-center gap-1">
+                    <i class='bx bxs-star text-[#FF642F]'></i>
+                    <i class='bx bxs-star text-[#FF642F]'></i>
+                    <i class='bx bxs-star text-[#FF642F]'></i>
+                    <i class='bx bxs-star text-[#FF642F]'></i>
+                    <i class='bx bxs-star text-[#FF642F]'></i>
+                </div>
+            </div>
+            <div class="line mx-3 my-5 px-4 h-0.5 bg-black rounded-md"></div>
+            <div class="buletin">
+                <span>This incredible Strawberries & Cream Cheesecake is absolutely delicious with creamy vanilla white
+                    chocolate cheesecake swirled with fresh strawberry cheesecake. It's topped with whipped cream and
+                    strawberry compote.This strawberry cheesecake is perfect to celebrate
+                    Spring since it's not too heavy and it feels so fresh.</span>
+            </div>
+        </div>
+        <div class="image my-5 mx-10 md:mx-20 w-fill p-0 h-100 flex items-center rounded-lg">
+            <img class="w-[100%] h-600 hover:opacity-50 cursor-pointer rounded-lg object-contain" src="image\strawberry.jpg" alt="">
+        </div>
+
+        <div class="time mx-10 flex items-center md:mx-20">
+            <div class="pre flex flex-col  text-sm">
+                <span class="text-gray-400">PRER TIME</span>
+                <span>15 MIN</span>
+            </div>
+            <div class="w-0.5 h-10 mx-5 bg-gray-400 rounded-xl"></div>
+            <div class="pre  flex flex-col  text-sm">
+                <span class="text-gray-400">PRER TIME</span>
+                <span>15 MIN</span>
+            </div>
+            <div class="w-0.5 h-10 mx-5 bg-gray-400 rounded-xl"></div>
+            <div class="w-0 h-10"></div>
+            <div class="serve  flex flex-col  text-sm">
+                <span  class="text-gray-400">SERVICES</span>
+                <span>4 PEOPLE</span>
+            </div>
+        </div>
+
+        <!--Ingredients-->
+        <div class="body md:flex justify-center">
+            <div class="part1 mx-10 md:mx-20 w-[60%]">
+                <div class="Ingridient my-5">
+                    <p class="text-3xl font-semibold py-2">Ingridients</p>
+                    <p class="for font-semibold py-1">For the crust</p>
+                    <div class="flex items-center gap-3">
+                        <div class="h-4 w-4 border-[1.5px] border-black rounded-[70px]"></div>
+                        <div>400g graham crackers</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="h-4 w-4 border-[1.5px] border-black rounded-[70px]"></div>
+                        <div>150g unsolted butters , melted</div>
+                    </div>
+                    <p class="my-3 font-semibold">For the cheescake</p>
+                    <div class="flex items-center gap-3">
+                        <div class="h-4 w-4 border-[1.5px] border-black rounded-[70px]"></div>
+                        <div>175g unsalted butter, melted</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="h-4 w-4 border-[1.5px] border-black rounded-[70px]"></div>
+                        <div>500g Philadelphia cream cheese, softened</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="h-4 w-4 border-[1.5px] border-black rounded-[70px]"></div>
+                        <div>250ml thickened/whipping cream, warm</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="h-4 w-4 border-[1.5px] border-black rounded-[70px]"></div>
+                        <div>3 tbsp powdered gelatin + 3 tbsp water</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="h-4 w-4 border-[1.5px] border-black rounded-[70px]"></div>
+                        <div>5 drops purple food gel</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="h-4 w-4 border-[1.5px] border-black rounded-[70px]"></div>
+                        <div>3 drops blue food gel</div>
+                    </div>
+                </div>
+
+                <div class="Instrustion">
+                    <p>Instrustion</p>
+                    <div class="flex items-top gap-3">
+                        <div
+                            class="h-4 w-4 my-1.5 border-none bg-orange-400 text-white  px-[5px] text-xs rounded-[70px]">
+                            1
+                        </div>
+                        <div>To prepare crust add graham crackers to a food processor and process until you reach fine
+                            crumbs. Add melted butter and pulse 3-4 times to coat crumbs with butter .</div>
+                    </div>
+                    <div class="flex items-top gap-3">
+                        <div
+                            class="h-4 w-4 my-1.5 border-none bg-orange-400 text-white  px-[5px] text-xs rounded-[70px]">
+                            2
+                        </div>
+                        <div>Pour mixture into a 20cm (8") tart tin. Use the back of a spoon to firmly press the mixture
+                            out
+                            across the bottom and sides of the tart tin.Chill for 30 min .</div>
+                    </div>
+                    <div class="flex items-top gap-3">
+                        <div
+                            class="h-4 w-4 my-1.5 border-none bg-orange-400 text-white  px-[5px] text-xs rounded-[70px]">
+                            3
+                        </div>
+                        <div>Begin by adding the marshmallows and melted butter into a microwave safe bowl. Microwave
+                            for 30
+                            seconds and mix to combine. Set aside.</div>
+                    </div>
+                    <div class="flex items-top gap-3">
+                        <div
+                            class="h-4 w-4 my-1.5 border-none bg-orange-400 text-white  px-[5px] text-xs rounded-[70px]">
+                            4
+                        </div>
+                        <div>Next, add the gelatine and water to a small mixing bowl and mix to combine. Microwave for
+                            30
+                            seconds.</div>
+                    </div>
+                    <div class="flex items-top gap-3">
+                        <div
+                            class="h-4 w-4 my-1.5 border-none bg-orange-400 text-white  px-[5px] text-xs rounded-[70px]">
+                            5
+                        </div>
+                        <div>Add the cream cheese to the marshmallow mixture and use a hand mixer or stand mixer fitted
+                            with
+                            a paddle attachment to mix until smooth.</div>
+                    </div>
+                    <div class="flex items-top gap-3">
+                        <div
+                            class="h-4 w-4 my-1.5 border-none bg-orange-400 text-white  px-[5px] text-xs rounded-[70px]">
+                            6
+                        </div>
+                        <div>Add the warm cream and melted gelatin mixture and mix until well combined.</div>
+                    </div>
+                    <div class="flex items-top gap-3">
+                        <div
+                            class="h-4 w-4 my-1.5 border-none bg-orange-400 text-white  px-[5px] text-xs rounded-[70px]">
+                            7
+                        </div>
+                        <div>Add 1/3 of the mixture to a mixing bowl, add purple food gel and mix until well combined.
+                            Colour 1/3 of the mixture blue. Split the remaining mixture into two mixing bowls, colour
+                            one
+                            pink and leave the other white.</div>
+                    </div>
+                    <div class="flex items-top gap-3">
+                        <div
+                            class="h-4 w-4 my-1.5 border-none bg-orange-400 text-white  px-[5px] text-xs rounded-[70px]">
+                            8
+                        </div>
+                        <div>Pour half the purple cheesecake mixture into the chill tart crust. Add half the blue and
+                            then
+                            add the remaining purple and blue in the tart tin. Use a spoon to drizzle some pink
+                            cheesecake
+                            on top. Use a skewer or the end of a spoon to swirl the pink. Add some small dots of the
+                            plain
+                            cheesecake mixture to create stars and then sprinkle some more starts on top before chilling
+                            for
+                            2 hours.</div>
+                    </div>
+                    <div class="flex items-top gap-3">
+                        <div
+                            class="h-4 w-4 my-1.5 border-none bg-orange-400 text-white  px-[5px] text-xs rounded-[70px]">
+                            9
+                        </div>
+                        <div>Slice with a knife to serve.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part2 mx-10 md:mx-20">
+                <div class="nutration bg-gray-300 px-3 py-3 rounded-xl">
+                    <p class="text-1xl font-semibold py-3">Nutrition Facts</p>
+                    <div class="flex justify-between my-1 items-center">
+                        <p>Calories</p>
+                        <p>219.9g</p>
+                    </div>
+                    <div class="line px-4 h-0.5 bg-gray-400 rounded-md"></div>
+                    <div class="flex justify-between my-1 items-center">
+                        <p>Total Fat</p>
+                        <p>10.7g</p>
+                    </div>
+                    <div class="line px-4 h-0.5 bg-gray-400 rounded-md"></div>
+                    <div class="flex justify-between my-1 items-center">
+                        <p>Saturated Fat</p>
+                        <p>2.2g</p>
+                    </div>
+                    <div class="line px-4 h-0.5 bg-gray-400 rounded-md"></div>
+                    <div class="flex justify-between  my-1 items-center">
+                        <p>Cholesterol</p>
+                        <p>37.4g</p>
+                    </div>
+                    <div class="line px-4 h-0.5 bg-gray-400 rounded-md"></div>
+                    <div class="flex justify-between  my-1 items-center">
+                        <p>Sodium</p>
+                        <p>120.3g</p>
+                    </div>
+                    <div class="line px-4 h-0.5 bg-gray-400 rounded-md"></div>
+                    <div class="flex justify-between my-1 items-center">
+                        <p>Potassium</p>
+                        <p>32.8g</p>
+                    </div>
+                    <div class="line px-4 h-0.5 bg-gray-400 rounded-md"></div>
+                    <div class="flex justify-between my-1 items-center">
+                        <p>Total Carbohydrate</p>
+                        <p>22.3g</p>
+                    </div>
+                    <div class="line px-4 h-0.5 bg-gray-400 rounded-md"></div>
+                    <div class="flex justify-between my-1 items-center">
+                        <p>Sugars</p>
+                        <p>8.4g</p>
+                    </div>
+                    <div class="line px-4 h-0.5 bg-gray-400 rounded-md"></div>
+                    <div class="flex justify-between my-1 items-center">
+                        <p>Protein</p>
+                        <p>7.9g</p>
+                    </div>
+                </div>
+        <!--Fresh Recipe-->
+                <div class="recipes">
+                    <p class="text-2xl py-5 font-semibold">Fresh Recipe</p>
+                    <div class="item flex items-center my-5">
+                        <div>
+                            <img class="w-40" src="image/burger.webp" alt="">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1">
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                            </div>
+                            <p class="text-1xl font-semibold">Beef Chees Burger</p>
+                        </div>
+                    </div>
+
+                    <div class="item flex items-center my-5">
+                        <div>
+                            <img class="w-40" src="image/chicken fry.jpg" alt="">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1">
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                            </div>
+                            <p class="text-1xl font-semibold">Chicken Fry</p>
+                        </div>
+                    </div>
+
+                    <div class="item flex items-center my-5">
+                        <div>
+                            <img class="w-40" src="image/puding.jpeg" alt="">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1">
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                            </div>
+                            <p class="text-1xl font-semibold">Golden Syrup Pudding</p>
+                        </div>
+                    </div>
+
+                    <div class="item flex items-center my-5">
+                        <div>
+                            <img class="w-40" src="image/naga wings.jpg" alt="">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center gap-1">
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                                <i class='bx bxs-star text-[#FF642F]'></i>
+                            </div>
+                            <p class="text-1xl font-semibold">Beef Chees Burger</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="delisious bg-[#FFD7C9] rounded-md px-5 py-[25px]">
+                    <p class="text-4xl font-bold py-3">Deliciousness to your inbox</p>
+                    <p>Enjoy weakly hand picked recipes and recommendation</p>
+                    <div class="bg-white my-2 flex items-center">
+                        <i class='bx bx-envelope mx-2 p-2'></i>
+                        <p>Email Address</p>
+                    </div>
+                    <button type="button"
+                        class="text-white w-[100%] my-2 rounded-md py-1 px-4 bg-[#FF642F] border border-black-500">JOIN</button>
+                    <p>By joining our newsletter you agree to our</p>
+                    <p>Terms and Condition</p>
+                </div>
+            </div>
+        </div>
+        <div class="feedback mx-10 md:mx-20">
+            <p class="font-bold text-4xl">Already made this?</p>
+            <button type="button" class="b my-2 rounded-md py-1 px-4 bg-white border border-black">Share your
+                feedback</button>
+            <div class="line w-[100%] h-2 bg-[#FF642F] "></div>
+        </div>
+    </main>
+
+    <footer class="footer my-5 bg-gray-400">
+        <div class="md:flex justify-between items-center md:mx-20 mx-10">
+            <div class="md:w-[400px]">
+            <p class="s text-4xl py-2">Shusshadu</p>
+            <p>On the other hand , we denounce with
+               righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of
+               the moment</p>
+            </div>
+
+            <div class="my-10 md:flex md:gap-20">
+            <div class="s flex justify-between y-2 items-center md:flex-col md:inline-block ">
+                <p>Shusshadu</p>
+                <i class='bx bx-chevron-down md:hidden'></i>
+                <div class="shus hidden md:block">
+                    <p>About us</p>
+                    <p>Carrers</p>
+                    <p>Contact us</p>
+                    <p>Feedback</p>
+                </div>
+            </div>
+            <div class="l1 h-0.5 bg-black md:hidden"></div>
+
+            <div class="s flex justify-between items-center md:flex-col md:inline-block">
+                <p>Legal</p>
+                <i class='bx bx-chevron-down md:hidden'></i>
+                <div class="shu hidden md:block">
+                    <p>Terms & Conditions</p>
+                    <p>Cookies</p>
+                    <p>Copyright</p>
+                </div>
+            </div>
+            <div class="l1 h-0.5 bg-black md:hidden"></div>
+
+            <div class="s flex justify-between items-center md:flex-col md:items-center md:inline-block">
+                <p>Follow</p>
+                <i class='bx bx-chevron-down md:hidden'></i>
+                <div class="hidden md:block">
+                    <p>Facebook</p>
+                    <p>Twiter</p>
+                    <p>Instagram</p>
+                    <p>Youtube</p>
+                </div>
+            </div>
+            <div class="l1 h-0.5 bg-black md:hidden"></div>
+        </div>
+        </div>
+        <div class="md:mx-20 mx-10 mb-10">
+        <div class="l1 h-0.5 bg-black hidden md:block"></div>
+        <div class="last flex justify-between py-5">
+            <p>2024 Shusshadu - All rights reserved</p>
+            <div class="icon flex gap-3 md:gap-10">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-youtube'></i>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+
+</html>
