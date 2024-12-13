@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title Name -->
-    <title>Favorites</title>
-
+    <title>Profile</title>
     <!-- linking with css file -->
     <link rel="stylesheet" href="favorites_page.css">
-
     <!-- font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +18,6 @@
         font-style: normal;
         }
     </style>
-
     <!-- font CDN 2 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,114 +31,218 @@
         }
     </style>
 
+    <!-- Animation CSS -->
+    <style>
+        .fade-out {
+          animation: fadeOut 0.5s forwards;
+        }
+    
+        @keyframes fadeOut {
+          from {
+            opacity: 1;
+          }
+          to {
+            opacity: 0;
+            transform: scale(0.9);
+          }
+        }
+      </style>
+      <!-- Animation CSS Done -->
+
+        <!-- Font CDN 3 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;1,600&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    
+        <style>
+            #judson-bold {
+              font-family: "Judson", serif;
+              font-weight: 700;
+              font-style: normal;
+            }
+        </style>
+
+
     <!-- DaisiUI + Tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Icon CDN -->
     <script src="https://kit.fontawesome.com/54d3cb8a03.js" crossorigin="anonymous"></script>
-
-    <script src="Favorites_page.js"></script>
-
 </head>
-<body class="inter-font min-h-screen flex flex-col">
+
+<body class="inter-font">
     <header class=" mx-[1rem] md:mx-[10rem]">
         <nav class="flex justify-between items-center mt-[4.9rem]">
             <h1 id="kaushan-script-regular" class="font-normal text-[1.8rem] md:text-[3.4rem]">Shusshadu</h1>
-            <ul class="hidden md:flex md:gap-[3.375rem]" id="mobile-menu">
+            <ul class="hidden md:flex md:gap-[3.375rem]">
                 <li><a href="index.html" class="font-semibold text-[1.25rem]">Home Page</a></li>
                 <li><a href="#" class="font-semibold text-[1.25rem]">Recipe Page</a></li>
                 <li><a href="#" class="font-semibold text-[1.25rem]">Categories</a></li>
                 <li><a href="#" class="font-semibold text-[1.25rem]">Favourites</a></li>
-            </ul>            
+            </ul>
             <div class="flex gap-[2rem]">
                 <a href="#"><i class="fa-solid fa-magnifying-glass text-[1.25rem] md:text-[2rem]"></i></a>
                 <a href="Profile_page.html">
-                    <img class="hidden md:inline-block rounded-full border border-black" src="accessories/images.png" alt="Profile Picture">
-                    <img class="md:hidden rounded-full border border-black" src="accessories/images_responsive.png" alt="Profile Picture">
+                    <img class="hidden md:inline-block rounded-full border border-black" src="https://i.ibb.co.com/TT335zZ/images.png" alt="Profile Picture">
+                    <img class="md:hidden rounded-full border border-black" src="https://i.ibb.co.com/TT335zZ/images.png" alt="Profile Picture">
                 </a>
                 <i class="md:hidden fa-solid fa-bars text-[1.25rem]"></i>
             </div>
         </nav>
     </header>
 
-    <main class="flex-grow">
-        <section>
 
-        </section>
-    </main>
-
-    <footer class="bg-[#F9F9F9] w-full mt-20">
-        <div class="container mx-auto px-4 lg:px-[10rem] pb-8 pt-16">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-                <!-- Logo and Description Section -->
-                <div class="lg:col-span-4">
-                    <h2 id="kaushan-script-regular" class="font-normal text-[2.5rem] mb-6 text-[#222]">Shusshadu</h2>
-                    <p class="text-gray-500 text-[0.9rem] leading-[1.8] max-w-[90%]">
-                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment
-                    </p>
+<main>
+    
+<!-- Favorite And Sort Button -->
+    <section class="mx-auto px-4 lg:px-[10rem] pb-8 pt-16">
+            <div class="flex justify-between items-center mb-6">
+              <h1 id="judson-bold" class="text-2xl font-bold">
+                <i class="fa-regular fa-heart text-[#FF642F] judson-bold "></i>
+                Favorites
+              </h1>
+              <!-- Sort Nav Bar -->
+              <div class="flex justify-end mb-6">
+                <div class="relative">
+                    <label for="sortOptions" class="sr-only">Sort Options</label>
+                    <select id="sortOptions" class="bg-white border border-gray-300 rounded px-4 py-2 shadow">
+                        <option value="default">Sort By</option>
+                        <option value="name">Name</option>
+                        <option value="recipes">Number of Recipes</option>
+                    </select>
                 </div>
-    
-                <!-- Navigation Sections -->
-                <div class="lg:col-span-8">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
-                        <!-- Shusshadu Links -->
-                        <div>
-                            <h3 class="font-bold text-[1.125rem] mb-8 text-[#222]">Shusshadu</h3>
-                            <ul class="space-y-5">
-                                <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">About us</a></li>
-                                <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Carrers</a></li>
-                                <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Contact Us</a></li>
-                                <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Feedback</a></li>
-                            </ul>
-                        </div>
-    
-                        <!-- Legal Links -->
-                        <div>
-                            <h3 class="font-bold text-[1.125rem] mb-8 text-[#222]">Legal</h3>
-                            <ul class="space-y-5">
-                                <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Terms & Conditions</a></li>
-                                <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Cookies</a></li>
-                                <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Copyright</a></li>
-                            </ul>
-                        </div>
-    
-                        <!-- Follow Links -->
-                        <div>
-                            <h3 class="font-bold text-[1.125rem] mb-8 text-[#222]">Follow</h3>
-                            <ul class="space-y-5">
-                                <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Facebook</a></li>
-                                <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Twitter</a></li>
-                                <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Instagram</a></li>
-                                <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Youtube</a></li>
-                            </ul>
+            </div>
+            
+    </section>
+<!-- Favorite And Sort Button Done -->
+
+<!-- Horizontal Area -->
+<section class="mx-auto px-4 lg:px-[10rem]">
+    <div >
+        <hr class=" border-[0.009rem] " >
+    </div>
+</section>
+<!-- Horizontal Area Done -->
+
+
+<!-- Info and Action Bar -->
+    <section class="mx-auto px-4 lg:px-[10rem] pb-8 pt-16">
+            <div class="flex items-center space-x-4 mb-12">
+              <p class="text-gray-700">(<span id="recipeCount">18</span> Recipes)</p>
+              
+                <button id="selectModeBtn" class="flex items-center space-x-1 text-gray-600 hover:text-gray-800">
+                    <i class="fa-regular fa-square-check"></i>
+                  <span>Select</span>
+                </button>
+                <button id="selectAllBtn" class="flex items-center space-x-1 text-gray-600 hover:text-gray-800">
+                  <span>All</span>
+                </button>
+                <i id="deleteBtn" class="fa-solid fa-trash hover:text-red-600"></i>
+            </div>
+<!-- Info and Action Bar -->       
+            
+        
+<!-- Recipe Grid And Load More Button -->
+<div id="recipeGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Example Recipe Card -->
+    <div class="bg-white shadow rounded overflow-hidden recipe-card transition-shadow shadow-orange-500 duration-300 hover:shadow-2xl hover:shadow-orange-500" data-name="Caramel Strawberry Milkshake" data-recipes="56">
+      <input type="checkbox" class="hidden select-checkbox" placeholder="a">
+      <img src="https://i.ibb.co.com/H2V0RFv/pitha.png" alt="Recipe Image" class="w-full h-32 object-cover">
+      <div class="p-4">
+        <h2 class="font-bold text-lg mb-2">Vapa Pitha</h2>
+        <p class="text-gray-600 text-sm">26 Recipes</p>
+      </div>
+
+    </div>
+
+    <!-- Add more recipe cards dynamically -->
+  </div>
+
+  <!-- Load More Button -->
+  <div class="flex justify-center mt-6">
+    <button id="loadMoreBtn" class="bg-white border border-[#F2A126]  text-[#F2A126] px-4 py-2 rounded hover:bg-[#F2A126] hover:text-white transition-all duration-500 hover:scale-110">Load More</button>
+  </div>
+</div>
+<!-- Recipe Grid And Load More Button Done -->
+
+        
+</main>
+
+    <footer>
+        <footer class="bg-[#F9F9F9] w-full mt-20">
+            <div class="container mx-auto px-4 lg:px-[10rem] pb-8 pt-16">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                    <!-- Logo and Description Section -->
+                    <div class="lg:col-span-4">
+                        <h2 id="kaushan-script-regular" class="font-normal text-[2.5rem] mb-6 text-[#222]">Shusshadu</h2>
+                        <p class="text-gray-500 text-[0.9rem] leading-[1.8] max-w-[90%]">
+                            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment
+                        </p>
+                    </div>
+        
+                    <!-- Navigation Sections -->
+                    <div class="lg:col-span-8">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                            <!-- Shusshadu Links -->
+                            <div>
+                                <h3 class="font-bold text-[1.125rem] mb-8 text-[#222]">Shusshadu</h3>
+                                <ul class="space-y-5">
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">About us</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Carrers</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Contact Us</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Feedback</a></li>
+                                </ul>
+                            </div>
+        
+                            <!-- Legal Links -->
+                            <div>
+                                <h3 class="font-bold text-[1.125rem] mb-8 text-[#222]">Legal</h3>
+                                <ul class="space-y-5">
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Terms & Conditions</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Cookies</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Copyright</a></li>
+                                </ul>
+                            </div>
+        
+                            <!-- Follow Links -->
+                            <div>
+                                <h3 class="font-bold text-[1.125rem] mb-8 text-[#222]">Follow</h3>
+                                <ul class="space-y-5">
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Facebook</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Twitter</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Instagram</a></li>
+                                    <li><a href="#" class="text-gray-500 hover:text-gray-900 text-[0.9rem]">Youtube</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-    
-            <!-- Divider -->
-            <div class="border-t border-gray-400 my-16"></div>
-    
-            <!-- Bottom Section -->
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-[0.9rem]">Shusshadu - All rights reserved To Team "Hidden Zeta"</p>
-                <div class="flex items-center gap-10 mt-6 md:mt-0">
-                    <a href="#" class="text-gray-400 hover:text-gray-600">
-                        <i class="fa-brands fa-facebook-f text-[1.1rem]"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-600">
-                        <i class="fa-brands fa-twitter text-[1.1rem]"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-600">
-                        <i class="fa-brands fa-instagram text-[1.1rem]"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-600">
-                        <i class="fa-brands fa-youtube text-[1.1rem]"></i>
-                    </a>
+        
+                <!-- Divider -->
+                <div class="border-t border-gray-400 my-16"></div>
+        
+                <!-- Bottom Section -->
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-[0.9rem]">Shusshadu - All rights reserved To Team "Hidden Zeta"</p>
+                    <div class="flex items-center gap-10 mt-6 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-brands fa-facebook-f text-[1.1rem]"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-brands fa-twitter text-[1.1rem]"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-brands fa-instagram text-[1.1rem]"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i class="fa-brands fa-youtube text-[1.1rem]"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
     </footer>
+<script src="Favorites_page.js"></script>
 </body>
+
 </html>
