@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shusshadu</title>
+<!--     <title>Shusshadu</title> -->
 </head>
 <body>
     <h1>Food Recipe Website</h1>
